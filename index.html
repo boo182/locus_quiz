@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple Locus test for Kedge students" />
+    <meta name="author" content="Julien Dupont" />
+    <link rel="stylesheet" href="./css/styles.css?v=1.0" />
+    <title>KEDGE Lancus Test</title>
+  </head>
+  <body>
+    <header>
+      <a href="https://kedge.edu/">
+        <img src="./public/logo-kedgebs-2022.svg" width="150" />
+      </a>
+    </header>
+    <main>
+      <section class="main__wrapper">
+        <div class="progress-bar"></div>
+
+        <h1>Test de Locus de contôle</h1>
+        <img
+          class="img"
+          src="https://www.penserchanger.com/wp-content/uploads/2020/02/Locus-de-controle.jpg"
+        />
+        <div class="quiz">
+          <p class="pres">
+            <b>Croyez-vous avoir le contrôle de votre vie ?</b> Jusqu’à quel
+            point pensez-vous pouvoir influencer les événements qui se
+            produisent dans votre vie ? Lorsqu’une difficulté se présente dans
+            votre vie, vous avez généralement deux options:
+            <br />
+            <br />
+            - Soit vous ressentez qu’il est de votre devoir de vous remonter les
+            manches et de la résoudre.
+            <br />
+            <br />
+            - Ou bien, vous savez que vous ne pourrez rien y faire et qu’il faut
+            simplement attendre que la tempête passe d’elle-même.
+            <br />
+            <br />Ce choix tout particulier se nomme le
+            <b>“locus de contrôle”</b> (ou “lieu de contrôle”). Découvert par le
+            psychologue Julian Rotter durant les années 60, ce processus de
+            pensée est intimement lié à notre personnalité et conditionne notre
+            manière de vivre notre vie. Ainsi, à chaque instant vous pouvez soit
+            attribuer le succès ou l’échec aux choses sur lesquelles vous avez
+            le contrôle ou bien aux forces en dehors de votre influence.
+          </p>
+          <div class="main__wrapper__separator"></div>
+          <p>
+            <em
+              >Voici un petit test qui vous permettra de savoir quel est votre
+              locus de contrôle. <br />
+              Répondez honnêtement et découvrez quel est votre locus</em
+            >
+          </p>
+          <form>
+            <!--  -->
+          </form>
+          <div class="error">
+            <div class="error__message">
+              Vous devez répondre à au moins 3 questions.
+            </div>
+          </div>
+        </div>
+
+        <div class="results">
+          <p class="pres">
+            Le locus de contrôle se définit comme la tendance que les individus
+            ont à considérer que les événements qui les affectent sont le
+            résultat de leurs actions (locus interne) ou, au contraire, qu’ils
+            sont le fait de facteurs externes sur lesquels ils n’ont que peu
+            d’influence (locus externe), par exemple la chance, le hasard, les
+            autres, les institutions ou l’État.
+          </p>
+          <h2>Voici votre score:</h2>
+          <div class="results__chart">
+            <canvas id="myChart"></canvas>
+          </div>
+          <p class="pres">
+            Les personnes ayant un
+            <strong>locus de contrôle interne</strong> établissent un lien
+            direct entre leur activité et leur performance. Elles sont
+            persuadées de la valeur de l’effort, de l’implication, de
+            l’apprentissage, de la résilience.
+            <br />
+            Les personnes ayant un
+            <strong>locus de contrôle externe</strong> expliquent leur
+            performance par la <em>“conjoncture"</em>, la <em>“chance”</em>, la
+            <em>“fatalité”</em> ou un <em>“autre, tout puissant”</em>.
+            <br />
+            <br />
+            Autant il est présomptueux de croire que l’on est seul à l’origine
+            de notre performance, autant il est dévastateur de penser que quoi
+            que l’on fasse les causes externes sont tout..
+          </p>
+          <div class="validation__wrapper">
+            <button class="retry __button">Retry quizz</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/display.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

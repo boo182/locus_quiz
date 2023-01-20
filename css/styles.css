@@ -1,0 +1,132 @@
+body {
+    background-color: #141c31;
+    color: #141c31;
+    margin: 0;
+    font-family: "Codec Cold", Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+}
+
+
+/* MAIN */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.main__wrapper {
+    position: relative;
+    width: 60%;
+    background-color: white;
+    padding: 1em;
+    color: #141c31;
+
+}
+
+.main__wrapper__question {
+    font-weight: 300;
+    margin-bottom: 2em;
+}
+
+.main__wrapper__question div.radio {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    margin-bottom: .5em;
+}
+
+.main__wrapper__separator {
+    width: 90%;
+    margin-left: 5%;
+    height: 1px;
+    background-color: #141c312d;
+}
+/* REsults */
+
+.results {
+    display: none;
+}
+
+.pres {
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.results__chart {
+    margin-left: 15%;
+    width: 60%;
+}
+
+strong, b {
+    color: #25345a;
+}
+
+.validation__wrapper {
+    margin-top: 3em;
+    width: 100%;
+    text-align:center;
+
+}
+
+.__button {
+    background-color: #1d2845;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: .4em 1.4em;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.__button:hover {
+    background-color: #161f36;
+}
+
+.__button:active {
+    background-color: #161f36;
+    opacity: .9;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.error {
+    visibility: hidden;
+    height: 40px;
+    padding: 1em;
+}
+.error__message {
+    background-color: #b71b54;
+    color: white;
+    font-size: 1em;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.progress-bar {
+    position: fixed;
+    height: 5px;
+    width: 0%;
+    background-color: #01a298;
+    top: 0;
+    left: 0;
+    transition: width .5s
+}
