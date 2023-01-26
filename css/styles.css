@@ -103,6 +103,18 @@ strong, b {
     opacity: .9;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+.__email {
+    border-radius: 6px;
+    border: 1px solid grey;
+    padding: 10px 5px;
+    width: 300px; 
+    font-size: 1.1em;
+}
+@media (max-width: 930px) {
+    .__email {
+        margin-bottom: 10px;
+    }
+}
 
 .error {
     visibility: hidden;

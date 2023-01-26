@@ -55,12 +55,16 @@
               Répondez honnêtement et découvrez quel est votre locus</em
             >
           </p>
+
           <form>
             <!--  -->
           </form>
           <div class="error">
-            <div class="error__message">
-              Vous devez répondre à au moins 3 questions.
+            <div class="error__message questions-error">
+              Vous n'avez pas répondu à toutes les questions
+            </div>
+            <div class="error__message user-error">
+              L'email renseigné n'est pas conforme
             </div>
           </div>
         </div>
@@ -101,10 +105,12 @@
         </div>
       </section>
     </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/chart.js"></script>
     <script src="./js/display.js"></script>
+    <script src="./js/mailer.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

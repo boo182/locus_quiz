@@ -3,8 +3,13 @@ const ctx = document.getElementById("myChart");
 const results = document.querySelector(".results");
 const quiz = document.querySelector(".quiz");
 const image = document.querySelector(".img");
-const error = document.querySelector(".error");
+const questionsError = document.querySelector(".questions-error");
+const userError = document.querySelector(".user-error");
 const progressBar = document.querySelector(".progress-bar");
+const errors = {
+  questionsError,
+  userError,
+};
 
 class QuizzDisplay {
   quetions = [];
@@ -47,8 +52,23 @@ class QuizzDisplay {
     questions.forEach((item, index) => {
       form.innerHTML += this._questionBuilder(item, index);
     });
-    form.innerHTML +=
-      '<div class="validation__wrapper"><button type="submit" class="validation __button">Validate</button></div>';
+    form.display = form.innerHTML += `<div class="validation__wrapper">
+    <p>
+      <em>Afin de pouvoir voir les résultats veuillez indiquer votre email</em>
+    </p>
+    <input
+      required
+      class="__email"
+      name="email"
+      id="email"
+      type="email"
+      aria-placeholder="jean.dupont@gmail.com"
+      placeholder="jean.dupont@gmail.com"
+    />
+    <button type="submit" class="validation __button">
+      Voir les résultats
+    </button>
+  </div>`;
   };
 
   getAnswers = () => {
@@ -78,11 +98,12 @@ class QuizzDisplay {
     return;
   };
 
-  errorMessage() {
-    error.style.visibility = "visible";
+  errorMessage(type) {
+    errors[type].style.visibility = "visible";
     const errorMessage = setTimeout(() => {
-      error.style.visibility = "hidden";
+      errors[type].style.visibility = "hidden";
     }, 3000);
+    errorMessage.clearTimeout();
   }
 
   updateProgressBar() {
