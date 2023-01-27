@@ -10,7 +10,6 @@ const main = () => {
   });
 
   form.addEventListener("submit", function (e) {
-    console.log(process.env);
     e.preventDefault();
     displayHandler.destroyGraph();
     const g = displayHandler.getAnswers(e.target);
