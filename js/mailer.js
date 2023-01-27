@@ -5,10 +5,10 @@ const sendMail = (name, results) => {
 
   Email.send({
     Host: "smtp.elasticemail.com",
-    // USERNAME
-    // PASSWORD
+    Username: process.env.USERNAME,
+    Password: process.env.PASSWORD,
     To: name,
-    // FROM
+    From: "lucien.leroy-ladurie@ridespace.io",
     Subject: `Lancus test ${name}`,
     Body: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
     <title>
