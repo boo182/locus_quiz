@@ -15,7 +15,6 @@ const main = () => {
     displayHandler.destroyGraph();
     const g = displayHandler.getAnswers(e.target);
     const userEmail = document.querySelector(".__email");
-    console.log(userEmail.value);
     if (!userEmail?.value) {
       return displayHandler.errorMessage("userError");
     }
