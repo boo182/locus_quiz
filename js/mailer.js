@@ -108,15 +108,6 @@ const sendMail = (name, results) => {
                   </td>
                 </tr><tr><td class="drow" valign="top" align="center" style="background-color: #ffffff; box-sizing: border-box; font-size: 0px; text-align: center;"><!--[if (gte mso 9)|(IE)]><table width="100%" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td valign="top"><![endif]--><div class="layer_2" style="max-width: 600px; display: inline-block; vertical-align: top; width: 100%;"><table border="0" cellspacing="0" class="edcontent" style="border-collapse: collapse;width:100%"><tbody><tr><td valign="top" class="edtext" style="padding: 20px; text-align: left; color: #5f5f5f; font-size: 12px; font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; word-break: break-word; direction: ltr; box-sizing: border-box;"><p style="font-size: 20px; margin: 0px; padding: 0px;">Locus interne : <strong>${inPercent}%</strong></p>
 <p style="font-size: 20px; margin: 0px; padding: 0px;">Locus externe: <strong>${outPercent}%</strong></p></td></tr></tbody></table></div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td></tr>
-                
-                
-                
-                
-                
-                
-                
-                
-                
               </tbody>
             </table>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
