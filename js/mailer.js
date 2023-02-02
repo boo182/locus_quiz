@@ -5,8 +5,8 @@ const sendMail = (name, results) => {
 
   Email.send({
     Host: "smtp.elasticemail.com",
-    Username: "lucien.leroy-ladurie@ridespace.io",
-    Password: "4C9903D32AA6BCE98EAD0E1035101FC6D1D2",
+    Username: "###################################",
+    Password: "######",
     To: "julien.dupont02@kedgebs.com",
     From: "lucien.leroy-ladurie@ridespace.io",
     Subject: `Lancus test ${name}`,
